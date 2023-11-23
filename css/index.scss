@@ -15,3 +15,23 @@ header{
   margin-left: 100px;
 
 }
+
+.container-img{
+  position: relative;
+
+  img{
+    filter: brightness(0.4);
+
+  }
+  p{
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    transform: translate(50% -50%);
+    color: white;
+    font-size: xxx-large;
+    text-align: center;
+  }
+
+  
+}

@@ -9,4 +9,20 @@ header i {
   margin-left: 100px;
 }
 
+.container-img {
+  position: relative;
+}
+.container-img img {
+  filter: brightness(0.4);
+}
+.container-img p {
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  transform: translate(50% -50%);
+  color: white;
+  font-size: xxx-large;
+  text-align: center;
+}
+
 /*# sourceMappingURL=index.css.map */
