@@ -9,6 +9,10 @@ header i {
   margin-left: 100px;
 }
 
+.nav-link {
+  text-decoration: none;
+}
+
 .container-img {
   position: relative;
 }
@@ -23,6 +27,38 @@ header i {
   color: white;
   font-size: xxx-large;
   text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.card-container .card:hover {
+  box-shadow: 0px 2px 7px 3px;
+}
+
+.comment-box {
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px 3px;
+}
+.comment-box .user1 {
+  border-radius: 10px;
+  padding: 5px;
+}
+.comment-box .vodou-img {
+  position: relative;
+}
+.comment-box .image-user {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  float: left;
+}
+
+@media screen and (max-width: 500px) {
+  .card-container {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
