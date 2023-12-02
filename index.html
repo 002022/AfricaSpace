@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Africa Space icon
     </title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -27,20 +28,20 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item px-4">
-                        <a class="nav-link" href="#">Oeuvres</a>
+                        <a class="nav-link" href="page/Oeuvre.html">Oeuvres</a>
                     </li>
                     <li class="nav-item px-4">
                         <a class="nav-link" href="#">Espace Artiste</a>
                     </li>
                     <li class="nav-item px-4">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="page/contact.html">Contact</a>
                     </li>
 
                 </ul>
             </div>
         </div>
 
-        <form class="bg-light-subtle me-5" role="search">
+        <form class="me-5" role="search">
             <input class="form-set border rounded-pill" type="search" placeholder="Search" aria-label="Search">
         </form>
 
@@ -48,9 +49,9 @@
     </nav>
     <div class="container-img">
 
-        <img src="images/leverd.JPG" alt="image" height="500" width="100%">
+        <img src="images/artfaces.JPG" alt="image" id="artface" height="500" width="100%">
         <p class="h1 text">Bienvenue dans Africa Space <br>
-         un site web réserver aux euvre d'arts <br> 100% Africain</>
+         un site web réserver aux euvre d'arts  <br>100% Africain</p>
     </div>
 
 
@@ -74,9 +75,9 @@
         </div>
     </div>
     
-    <div class="container comment-box ">
+    <div class="container comment-box">
         <h5 class="card-title text-center text-danger my-3">les avis de nos utilisateur</h5>
-        <div class="bg-light" id="user02">
+        <div class="bg-light user01">
             <img src="images/user1.JPG" alt="" class="image-user me-2">
             <p class="text-box text-secondary">
                 interesting site all need to know about african art found here
@@ -87,7 +88,7 @@
                 <i class="fa fa-star"></i>
                 <i class="fa-solid fa-star-half"></i>
         </div>
-        <div class="bg-light mt-3" id="user01">
+        <div class="bg-light mt-3 user01">
             <img src="images/user2.JPG" alt="" class="image-user me-2">
             <p class="text-box text-secondary">
                 un site très cool les contenue des artiste donne envi revenir visiter je mais 4 étoile parce
@@ -98,7 +99,7 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
         </div>
-        <div class="bg-light mt-3">
+        <div class="bg-light mt-3 user01">
             <img src="images/user3.JPG" id="user0" alt="" class="image-user me-2">
             <p class="text-box text-secondary">
            un site magique jolie exposition les explication son detailer en ce qui concerne les Oeuvre bien sur
@@ -112,31 +113,96 @@
     </div>
 
 </div>
-<section class="galery-img">
-    <div class="overflow-x-auto">
-        <div class="cards" style="width: 18rem; height: 450px">
-            <img src="images/artfaces.JPG" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+<section>
+    <p class="text-light text-center display-4 shadow py-3">contemplate our expositions</p>
+    <div class="galery-img m-4">
+
+        <span class="slider" id="slider1"></span>
+        <span class="slider" id="slider2"></span>
+        <span class="slider" id="slider3"></span>
+        <span class="slider" id="slider4"></span>
+        <span class="slider" id="slider5"></span>
+        <span class="slider" id="slider6"></span>
+        <span class="slider" id="slider7"></span>
+        <span class="slider" id="slider8"></span>
+
+        <div class="container-img">
+            <div class="slide_div" id="slide_1">
+                <img src="images/mask1%20(6).JPG" alt="" class="img" id="img1">
+                <a href="#slider1" class="button" id="button1"></a>
             </div>
+            <div class="slide_div" id="slide_2">
+                <img src="images/mask1%20(5).JPG" alt="" class="img" id="img2">
+                <a href="#slider2" class="button" id="button2"></a>
+            </div>
+            <div class="slide_div" id="slide_3">
+                <img src="images/mask1%20(4).JPG" alt="" class="img" id="img3">
+                <a href="#slider3" class="button" id="button3"></a>
+            </div>
+            <div class="slide_div" id="slide_4">
+                <img src="images/mask1%20(3).JPG" alt="" class="img" id="img4">
+                <a href="#slider4" class="button" id="button4"></a>
+            </div>
+            <div class="slide_div" id="slide_5">
+                <img src="images/paint1.JPG" alt="" class="img" id="img5">
+                <a href="#slider5" class="button" id="button5"></a>
+            </div>
+            <div class="slide_div" id="slide_6">
+                <img src="images/vodu.JPG" alt="" class="img" id="img6">
+                <a href="#slider6" class="button" id="button6"></a>
+            </div>
+            <div class="slide_div" id="slide_7">
+                <img src="images/jog.JPG" alt="" class="img" id="img7">
+                <a href="#slider7" class="button" id="button7"></a>
+            </div>
+            <div class="slide_div" id="slide_8">
+                <img src="images/veste.JPG" alt="" class="img" id="img8">
+                <a href="#slider1" class="button" id="button8"></a>
+            </div>
+
         </div>
+    </div>
+
+    <div class="overlay">
+
+        <div class="card text-bg-dark m-5">
+            <img src="images/mask1%20(2).JPG" class="card-img" alt="..."  width="600px" height="400px">
+            <div class="card-img-overlay align-content-lg-center">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+
+                <button class="btn btn-outline-info btn-lg ">
+                    join now
+                </button>
+            </div>
 
 
+        </div>
     </div>
 
 </section>
-<div class="overlay">
+<footer class="foot">
+    <div class="foot_footer">
+        <div class="social_links">
+            <p class="lead">connect with us via our different social media.</p>
 
-    <div class="card text-bg-dark m-5">
-        <img src="images/jog.JPG" class="card-img" alt="..."  width="600px" height="300px">
-        <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            <a href="#" >
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" >
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" >
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" >
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
         </div>
     </div>
-</div>
-
+</footer>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/all.min.js"></script>
 </body>

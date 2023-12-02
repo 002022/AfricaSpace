@@ -1,27 +1,36 @@
 header .form-set {
   margin-top: 10px;
   padding: 2px 40px;
+  border: 0;
+  text-decoration: none;
 }
 header i {
   position: absolute;
 }
+
 .navset {
   margin-left: 100px;
 }
 
 .nav-link {
   text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}
+
+.nav-link:hover {
+  color: yellow;
 }
 
 .container-img {
   position: relative;
 }
-.container-img img {
+.container-img #artface {
   filter: brightness(0.4);
 }
 .container-img p {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 27%;
   transform: translate(50% -50%);
   color: white;
@@ -29,21 +38,31 @@ header i {
   text-align: center;
 }
 
+.contact-img h6 {
+  margin-left: 400px;
+  margin-top: 1rem;
+}
+
 .card-container {
   display: flex;
   justify-content: flex-start;
 }
 .card-container .card:hover {
-  box-shadow: 0px 2px 7px 3px;
+  box-shadow: 0 2px 7px 3px;
 }
 
 .comment-box {
   border-radius: 5px;
-  box-shadow: 0px 2px 7px 3px;
+  box-shadow: 0 2px 7px 3px;
+  overflow-y: scroll;
 }
 .comment-box .user1 {
   border-radius: 10px;
   padding: 5px;
+}
+.comment-box .user01 {
+  border-radius: 10px;
+  padding-bottom: 5px;
 }
 .comment-box .vodou-img {
   position: relative;
@@ -55,9 +74,207 @@ header i {
   float: left;
 }
 
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background: linear-gradient(30deg, rgb(100, 241, 84), rgb(92, 92, 229), rgb(111, 30, 30));
+}
+
+.galery-img {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+.galery-img .container-img {
+  width: 100%;
+  left: 0;
+  display: flex;
+  transition: 1s;
+}
+.galery-img .slide_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.galery-img img {
+  position: relative;
+  width: 17rem;
+  height: 25rem;
+  filter: saturate(10%);
+  transition: 0.7s;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+.galery-img .button {
+  position: absolute;
+  width: 17rem;
+  height: 25rem;
+  transition: 0.7s;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.setting-galery {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background: linear-gradient(30deg, rgb(100, 241, 84), rgb(92, 92, 229), rgb(111, 30, 30));
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slider1:target ~ .container-img #img1,
+#slider1:target ~ .container-img #button1 {
+  width: 22rem;
+  height: 30rem;
+  background-color: transparent;
+  filter: saturate(100%);
+}
+
+#slider2:target ~ .container-img #img2,
+#slider2:target ~ .container-img #button2 {
+  width: 22rem;
+  height: 30rem;
+  background-color: transparent;
+  filter: saturate(100%);
+}
+
+#slider3:target ~ .container-img #img3,
+#slider3:target ~ .container-img #button3 {
+  width: 22rem;
+  height: 30rem;
+  background-color: transparent;
+  filter: saturate(100%);
+}
+
+#slider4:target ~ .container-img #img4,
+#slider4:target ~ .container-img #button4 {
+  width: 22rem;
+  height: 30rem;
+  background-color: transparent;
+  filter: saturate(100%);
+}
+
+#slider5:target ~ .container-img #img5,
+#slider5:target ~ .container-img #button5 {
+  width: 22rem;
+  height: 30rem;
+  background-color: transparent;
+  filter: saturate(100%);
+}
+
+#slider6:target ~ .container-img #img6,
+#slider6:target ~ .container-img #button6 {
+  width: 22rem;
+  height: 30rem;
+  background-color: transparent;
+  filter: saturate(100%);
+}
+
+#slider7:target ~ .container-img #img7,
+#slider7:target ~ .container-img #button7 {
+  width: 22rem;
+  height: 30rem;
+  background-color: transparent;
+  filter: saturate(100%);
+}
+
+#slider8:target ~ .container-img #img8,
+#slider8:target ~ .container-img #button8 {
+  width: 22rem;
+  height: 30rem;
+  background-color: transparent;
+  filter: saturate(100%);
+}
+
+.slider1:target ~ .container-img {
+  left: 60%;
+}
+
+.slider2:target ~ .container-img {
+  left: 40%;
+}
+
+.slider3:target ~ .container-img {
+  left: 20%;
+}
+
+.slider4:target ~ .container-img {
+  left: 0;
+}
+
+.slider5:target ~ .container-img {
+  left: -20%;
+}
+
+.slider1:target ~ .container-img {
+  left: -40%;
+}
+
+.slider1:target ~ .container-img {
+  left: -60%;
+}
+
+.form-setting {
+  background: rgba(255, 255, 255, 0.3);
+  margin: auto 200px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.foot {
+  background: #D0B9A6;
+}
+
+.foot_footer {
+  bottom: 40px;
+  height: 5rem;
+  width: calc(100% - 60px);
+}
+
+.social_links {
+  display: flex;
+  gap: 15px;
+  padding-top: 10px;
+  border-top: 1px solid darkgray;
+}
+
+.social_links a {
+  text-decoration: none;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.social_links a i {
+  transition: 0.3s;
+}
+
+.social_links a:hover {
+  color: yellow;
+}
+
 @media screen and (max-width: 500px) {
   .card-container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-set {
+    right: 5px;
   }
 }
 
